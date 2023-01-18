@@ -1,5 +1,5 @@
 const corsOptions = {
-  origin: ["https://hash-tags.netlify.app", "http://localhost:3000"],
+  origin: ["https://main.d1m10vjnzwngec.amplifyapp.com", "http://localhost:3000"],
   credentials: true,
 };
 
