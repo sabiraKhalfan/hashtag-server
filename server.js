@@ -40,7 +40,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-    origin: [ "http://localhost:3000",process.env.FRONT_END_URL]
+    origin: [ "http://localhost:3000","https://anaqua.netlify.app",process.env.FRONT_END_URL]
   },
 });
 
