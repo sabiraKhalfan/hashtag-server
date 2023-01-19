@@ -13,13 +13,13 @@ import UploadRoute from "./Routes/UploadRoute.js";
 import CommentRoute from "./Routes/CommentRoute.js";
 import ChatRoute from "./Routes/ChatRoute.js";
 import MessageRoute from "./Routes/MessageRoute.js";
-import { corsOptions } from "./config/cors.js";
+//import { corsOptions } from "./config/cors.js";
 
 const app = express();
 app.use(cookieParser());
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors(corsOptions));
+app.use(cors());
 connectDB();
 
 app.use(express.static("public"));
